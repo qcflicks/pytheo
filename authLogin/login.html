@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+    <!-- HEAD OF HTML -->
+  <head>
+
+    <!-- Required Meta-tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="theme-color" content="">
+    <meta name="description" content="">
+    <meta name="robots" content="index, follow">
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="login.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5e64d08a4d.js"></script>
+    <title>Author Login</title>
+    <!-- Logo (Favicon) -->
+    <link rel="icon" href="authpage.png" type="image/x-icon">
+
+  </head>
+
+  <body>
+
+  <div class="bg">
+
+    <div class="img-box">
+      <img src="userFillSvg.svg" alt="Icon" class="img">
+    </div>
+
+    <div class="login-form">
+
+        <div class="container">
+
+            <div class="hding">
+                <h2>Author's Login</h2>
+            </div>
+
+            <form class="form" action="login.php" method="post">
+
+              <div class="input-group">
+                <i class="fas fa-at"></i>
+                <input type="text" name="username" placeholder="USERNAME" maxlength="10" class="input-box" id="username" required>
+              </div>
+
+              <div class="input-group">
+                <i class="fas fa-key"></i>
+                <input type="password" name="password" placeholder="PASSWORD" maxlength="12" class="input-box" id="password" required>
+              </div>
+
+              <div class="submit-btn">
+                <button type="submit" name="submit-btn" class="btn">LOGIN <i class="fas fa-sign-in-alt"></i></button>
+              </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+        <div class="powered-by">
+          <p>
+            This page is powered by <a href="#">Pytheo</a>
+          </p>
+        </div>
+
+
+        <div class="copyright">
+          <h6>
+            Copyright - <script>document.write(new Date().getFullYear())</script> <a href="#">Pytheo</a>
+          </h6>
+        </div>
+
+  </div>
+
+  </body>
+</html>

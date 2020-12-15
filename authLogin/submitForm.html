@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+    <!-- HEAD OF HTML -->
+  <head>
+
+    <!-- Required Meta-tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="theme-color" content="">
+    <meta name="description" content="">
+    <meta name="robots" content="index, follow">
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="submitForm.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5e64d08a4d.js"></script>
+    <title>Author Article Submit</title>
+    <!-- Logo (Favicon) -->
+    <link rel="icon" href="authpage.png" type="image/x-icon">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="box">
+
+      <div class="form-container">
+
+        <div class="hding">
+          <h1>Author's Submission Form</h1>
+        </div>
+
+        <form action="submit.php" method="post">
+
+          <div class="input-box">
+              <span class="title">Title</span>
+              <input type="text" name="title" class="title-box" maxlength="60" required>
+          </div>
+
+          <div class="input-box">
+                <span class="subject">Subject</span>
+                <input type="text" name="subject" class="subject-box" maxlength="20" required>
+          </div>
+
+          <div class="input-box">
+              <span class="title">Topic</span>
+              <input type="text" name="topic" class="topic-box" maxlength="25" required>
+          </div>
+
+          <div class="input-box">
+                <span class="subject">Tags</span>
+                <input type="text" name="tags" class="tag-box" maxlength="28">
+          </div>
+
+
+
+          <div class="input-box">
+                <span class="subject">Note</span>
+                <input type="text" name="note" class="note-box" maxlength="60">
+          </div>
+
+
+        <div class="upload-btn">
+            <button type="file">Upload</button>
+        </div>
+
+            <div class="checkbox">
+              <input type="checkbox" required>
+              <span>I'm sure that I have used Copyright free images, appropriate outlinks and appropriate tags in the article.</span>
+            </div>
+
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+
+    <div class="modal">
+      <div class="m-container">
+
+        <div class="hding">
+          <h2>Confirm Submmision</h2>
+        </div>
+
+        <div class="box">
+          <p>
+            Are you sure, that you want to submit the article and sure about the .
+          </p>
+
+          <img src="tick.gif" alt="Success" class="icon" id="anim-icon">
+
+        </div>
+
+        <div class="btns">
+
+          <div class="recheck-box">
+            <a class="btn-2" id="check-btn">Re-Check</a>
+          </div>
+
+          <div class="confirm-box">
+            <a class="btn-1" id="confirm-btn">Confirm</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="powered-by">
+      <p>
+        This page is powered by <a href="#">Pytheo</a>
+      </p>
+    </div>
+
+
+    <div class="copyright">
+      <h6>
+        Copyright - <script>document.write(new Date().getFullYear())</script> <a href="#">Pytheo</a>
+      </h6>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+# .htaccess for Pytheo
+# Configuration to remove .html extension from URL
+
+RewriteEngine On
+
+# Configuration
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# PHP
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# HTML
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+    <!-- HEAD OF HTML -->
+  <head>
+
+    <!-- Required Meta-tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="theme-color" content="#213140">
+    <meta name="description" content="Contact us regarding your doubts or your valuable feedback to us. Any changes in articles, submission of information, to know more about pytheo.">
+    <meta name="robots" content="index, follow">
+    <!-- Google reCaptcha v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lcl0_YUAAAAAHnzlEF643_Mm5HbgCDOYbhvgl-y"></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6Lcl0_YUAAAAAHnzlEF643_Mm5HbgCDOYbhvgl-y', {
+              action: 'contact'
+            }).then(function (token) {
+                var recaptchaResponse = document.getElementById('recaptchaResponse');
+                recaptchaResponse.value = token;
+            });
+        });
+    </script>
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="css/contactus.css">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5e64d08a4d.js"></script>
+    <!-- Title -->
+    <title>Contact Us - Pytheo</title>
+    <!-- Logo (Favicon) -->
+    <link rel="icon" href="https://i.ibb.co/TK27z7p/Logo.jpg" type="image/x-icon">
+    <!--OG Tags-->
+        <!-- Primary Meta Tags -->
+      <meta name="title" content="Pytheo">
+      <meta name="description" content="A blog with interesting articles of trending topics, the latest news, science & technology, math shared by passionate youngsters focusing on supporting the learning community. A new way of sharing knowledge between students concerning perceptions of everyone, featuring the MyIdiea, where anyone can share useful information to everyone with approval by the blog">
+        <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="http://pytheo.rf.gd/contactus.html">
+      <meta property="og:title" content="Pytheo">
+      <meta property="og:description" content="A blog with interesting articles of trending topics, the latest news, science & technology, math shared by passionate youngsters focusing on supporting the learning community. A new way of sharing knowledge between students concerning perceptions of everyone, featuring the MyIdiea, where anyone can share useful information to everyone with approval by the blog">
+      <meta property="og:image" content="https://i.ibb.co/TK27z7p/Logo.jpg">
+        <!-- Twitter -->
+      <meta property="twitter:card" content="summary_small_image">
+      <meta property="twitter:url" content="http://pytheo.rf.gd/contactus.html">
+      <meta property="twitter:title" content="Pytheo">
+      <meta property="twitter:description" content="A blog with interesting articles of trending topics, the latest news, science & technology, math shared by passionate youngsters focusing on supporting the learning community. A new way of sharing knowledge between students concerning perceptions of everyone, featuring the MyIdiea, where anyone can share useful information to everyone with approval by the blog">
+      <meta property="twitter:image" content="https://i.ibb.co/TK27z7p/Logo.jpg">
+
+  </head>
+
+  <body>
+
+        <!-- HEADER -->
+    <header>
+        <!-- NAVBAR -->
+      <nav>
+        <div class="nav-items">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a class="active">Contact</a></li>
+            <li><a href="https://snchakri.netlify.app">Creator</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+      <!-- MOBILE LAYOUT -->
+    <div class="nav">
+      <div class="container">
+        <div class="open">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="elements">
+          <a href="https://snchakri.netlify.app"><i class="fas fa-user-tie animatenavbar"></i></a>
+          <a href="aboutus.html"><i class="fas fa-info animatenavbar"></i></a>
+          <a><i id="active" class="fas fa-home animatenavbar"></i></a>
+          <a href="contactus.html"><i class="fas fa-phone-alt animatenavbar"></i></a>
+          <a href="team.html"><i class="fas fa-user-friends animatenavbar"></i></a>
+        </div>
+      </div>  
+    </div>
+
+ <section>
+  <div class="contact-form">
+      <div class="bg"></div>
+    <div class="container">
+        <div class="form-box">
+            <form action="php/contactconfig.php" method="POST" netlify>
+                <h2>Contact Us</h2>
+                <div class="input-box">
+                  <input type="text" name="name" maxlength="20" required>
+                  <span>Name</span>
+                </div>
+                <div class="input-box">
+                  <input type="email" name="email" maxlength="28" required>
+                  <span>E-Mail</span>
+                </div>
+                <div class="input-box">
+                  <input type="text" name="subject" maxlength="40" required>
+                  <span>Subject</span>
+                </div>
+                <div class="input-box">
+                  <textarea name="message" maxlength="2000" required></textarea>
+                  <span>Message</span>
+                </div>
+                <div class="agree-box">
+                  <input type="checkbox" class="checkbox" id="agreebox" onchange="agree()">
+                  <p>
+                    Agree to <a href="links/privacypolicy.html">Privacy Policy</a> and <a href="links/termsUse.html">Terms Of Use</a>
+                  </p>
+                </div>
+                <div class="captcha">
+                  <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                </div>
+                <div class="input-box">
+                  <div class="submitbox">
+                    <input type="submit" value="Submit" name="submit" id="submit" disabled>
+                  </div>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+ </section>
+
+ <div class="others">
+   <div class="container">
+     <h4>Other ways to Contact Us</h4>
+     <div class="icons">
+      <a href="mailto:pytheoapp@gmail.com?Subject=Conatacting%20Team%20For%20Support"><i id="gmail" class="fas fa-envelope"></i></a>
+      <a href="https://twitter.com/Pytheo3" target="_blank"><i id="twitter" class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/Pytheo-100796161605225/" target="_blank"><i id="facebook" class="fab fa-facebook-f"></i></a>
+     </div>
+   </div>
+ </div>
+
+  <!-- COPYRIGHT INFORMATION -->
+  <div class="copyright">
+    <h6><i class="fas fa-copyright"></i> Copyright <script>document.write(new Date().getFullYear())</script></h6>
+  </div>
+
+      </div>
+
+    <!-- JAVASCRIPT FILES -->
+      <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <!-- External Javascript Files -->
+    <script src="javascript/all.min.js"></script>
+      <!-- JAVASCRIPT -->
+    <script>
+
+      // AGREEMESNT NOTE CHECK-BOX
+        // ELEMENTS TO VARIABLES
+          var submit = document.getElementById("submit");
+          var checkbox = document.getElementById("agreebox");
+        // AGREEMENT CHECKBOX VERIFICATION AND ALERT
+          // FUNCTION ON CHECKING
+            function agree() {
+              if(checkbox.checked) {
+                submit.disabled = false;
+              }
+              else {
+                submit.disabled = true;
+                alert("Agree to privacy policy and terms of use to submit the form!");
+              }
+            }
+
+    </script>
+
+  </body>
+</html>

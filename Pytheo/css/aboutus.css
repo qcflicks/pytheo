@@ -1,0 +1,683 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@font-face {
+	font-family: Product Sans;
+	src: url(fonts/Product\ Sans\ Regular.ttf);
+  }
+
+/*___________________________________________________________
+               HTML Style Configuration
+  __________________________________________________________*/
+
+body {
+	background: #E0E5EC;
+	width: 100%;
+}
+
+/*___________________________________________________________
+               				HEADINGS
+  __________________________________________________________*/
+
+.headingcontainer {
+	width: 100%;
+	height: 15px;
+	margin: 1.5em 0 1.6em;
+}
+
+.headingcontainer .heading {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	color: #213140;
+	font-weight: 700;
+	letter-spacing: 2px;
+	word-spacing: 1px;
+	margin: 0.7em 0 0.6em 0;
+	text-align: center;
+	position: relative;
+}
+
+#main {
+	margin: 2em 0 0.6em 0;
+}
+
+.headingcontainer .heading::after {
+	content: '';
+	width: 92px;
+	height: 4.9px;
+	background: #213140;
+	position: absolute;
+	bottom: -1em;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 3px;
+}
+
+.headingcontainer .heading a {
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	color: #359AF2;
+}
+
+@media screen and (max-width:850px) {
+
+	#main {
+		margin: 6em 0 3em;
+	}
+
+}
+
+/*___________________________________________________________
+               			PRODUCT SECTION
+  __________________________________________________________*/
+
+.productsection-lg {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.productsection-lg .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 4em 0 2em;
+	padding: 2em 4em;
+}
+
+.productsection-lg .container .infocard {
+	display: flex;
+	flex-wrap: wrap;
+	background: #E0E5EC;
+	width: 1000px;
+	max-width: 100%;
+	overflow: hidden;
+	height: auto;
+	border-radius: 1em;
+	box-shadow:  6px 6px 20px #caced4, 
+			 -6px -6px 20px #f6fcff;
+}
+
+.productsection-lg .container .infocard .picture {
+	width: 40%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-touch-callout: none;
+    	-webkit-user-select: none;
+    		-khtml-user-select: none;
+       			-moz-user-select: none;
+        			-ms-user-select: none;
+            			user-select: none;
+}
+
+.productsection-lg .container .infocard .picture img {
+	margin: 7% 0 -55%;
+	width: 640px;
+	height: auto;
+}
+
+.productsection-lg .container .infocard .productquote {
+	width: 60%;
+	padding: 0.2em;
+	margin: 0 0 0 -1.5em;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.productsection-lg .container .infocard .productquote p {
+	font-family: 'Product Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.45em;
+	text-align: center;
+	line-height: 38px;
+	word-spacing: 1px;
+}
+
+.productsection-lg .container .infocard .productquote p a {
+	color: #213140;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+
+.productsection-sm {
+	display: none;
+}
+
+@media screen and (max-width:905px) {
+
+	.productsection-sm {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.productsection-sm .container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 5.5em 0 3em;
+	}
+
+	.productsection-sm .container .infocard {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		background: #E0E5EC;
+		width: 85%;
+		max-width: 100%;
+		overflow: hidden;
+		height: auto;
+		border-radius: 1em;
+		box-shadow:  6px 6px 20px #caced4, 
+				-6px -6px 20px #f6fcff;
+	}
+
+	.productsection-sm .container .infocard .picture {
+		width: 100%;
+		height: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 50%;
+		overflow: hidden;
+	}
+
+	.productsection-sm .container .infocard .picture img {
+		margin: 2% 0 -31%;
+		width: 90%;
+		height: auto;
+	}
+
+	.productsection-sm .container .infocard .productquote {
+		width: 100%;
+		padding: 1em 3em;
+		margin: 2em 0 2.3em;
+		height: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.productsection-sm .container .infocard .productquote p {
+		font-family: 'Product Sans', sans-serif;
+		font-weight: 400;
+		font-size: 1.45em;
+		text-align: center;
+		line-height: 38px;
+		word-spacing: 1px;
+	}
+	
+	.productsection-sm .container .infocard .productquote p a {
+		color: #213140;
+		font-weight: 600;
+		letter-spacing: 1px;
+		text-transform: capitalize;
+		text-decoration: none;
+	}
+	
+	.productsection-lg {
+		display: none;
+	}
+
+}
+
+/*___________________________________________________________
+               PRODUCT CARDS SECTION
+  __________________________________________________________*/
+
+.productcards {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.productcards .container {
+	margin: 1em 0px;
+	width: 1000px;
+	padding: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+.productcards .container .cardwrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	flex: 1 2 auto;
+}
+
+.productcards .container .cardwrap .card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background: #E0E5EC;
+	margin: 2em 1.1em;
+	border-radius: 1.3em;
+	width: 270px;
+	height: 400px;
+	max-width: 100%;
+	box-shadow:  4px 4px 18px #c3c7cd, 
+				-4px -4px 18px #fdffff;
+	overflow: hidden;
+}
+
+.productcards .container .cardwrap .card .image {
+	background: linear-gradient(45deg,#FF748B,#FE7BB0);
+	width: 100%;
+	height: 190px;
+	border-radius: 1.3em;
+	padding: 0.6em;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 4px 4px 10px rgba(254,123,176,0.8);
+}
+
+.productcards .container .cardwrap .card .image .imagebox {
+	width: 100%;
+	height: 100%;
+	border-radius: 0.6em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #E0E5EC;
+}
+
+.productcards .container .cardwrap .card .image .imagebox img {
+	width: 90%;
+	height: 90%;
+	margin: 0 auto;
+	-webkit-touch-callout: none;
+    	-webkit-user-select: none;
+    		-khtml-user-select: none;
+       			-moz-user-select: none;
+        			-ms-user-select: none;
+            			user-select: none;
+}
+
+.productcards .container .cardwrap .card .info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 1.1em;
+	height: 200px;
+	overflow: hidden;
+}
+
+.productcards .container .cardwrap .card .info h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin: 0.22em 0.3em;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	color: #333;
+}
+
+.productcards .container .cardwrap .card .info p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	word-spacing: 1px;
+	text-align: center;
+	margin: 0.1em 0 0.22em;
+	color: #444;
+}
+
+@media screen and (max-width:325px) {
+	.productcards .container .cardwrap .card {
+		width: 250px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:305px) {
+	.productcards .container .cardwrap .card {
+		width: 230px;
+	}
+
+	.productcards .container .cardwrap .card .info h3 {
+		margin: 1.9em 0.3em 0.22em;
+	}
+}
+
+/*___________________________________________________________
+               ABOUT SECTION
+  __________________________________________________________*/
+
+.aboutsection-lg {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.aboutsection-lg .container {
+	width: 950px;
+	max-width: 100%;
+	margin: 2.5em 0 0.5em;
+	padding: 0.6em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.aboutsection-lg .container .image {
+	width: 35%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.aboutsection-lg .container .image img {
+	width: 90%;
+	height: 90%;
+	margin: 0 auto;
+	-webkit-touch-callout: none;
+    	-webkit-user-select: none;
+    		-khtml-user-select: none;
+       			-moz-user-select: none;
+        			-ms-user-select: none;
+            			user-select: none;
+}
+
+.aboutsection-lg .container .info {
+	width: 65%;
+	height: 100%;
+	padding: 0 0 0 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.aboutsection-lg .container .info p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.1em;
+	font-weight: 600;
+	line-height: 33px;
+	font-size: 1.1em;
+	word-spacing: 1px;
+	margin: 0.55em 0;
+}
+
+.aboutsection-sm {
+	display: none;
+}
+
+@media screen and (max-width:1024px) {
+	.aboutsection-lg .container {
+		width: 85%;
+	}
+}
+
+@media screen and (max-width:900px) {
+
+	.aboutsection-lg .container {
+		margin: 3em 0 0.5em;
+	}
+	
+}
+
+@media screen and (max-width:860px) {
+
+	.aboutsection-sm {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.aboutsection-sm .container {
+		width: 85%;
+		max-width: 100%;
+		margin: 4.5em 0 1.7em;
+		padding: 0.6em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.aboutsection-sm .container .image {
+		width: 100%;
+		height: 40%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.aboutsection-sm .container .image img {
+		width: 70%;
+		height: 70%;
+		margin: 0 auto;
+		-webkit-touch-callout: none;
+			-webkit-user-select: none;
+				-khtml-user-select: none;
+					-moz-user-select: none;
+						-ms-user-select: none;
+							user-select: none;
+	}
+
+	.aboutsection-sm .container .info {
+		width: 100%;
+		height: 60%;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.aboutsection-sm .container .info p {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1.1em;
+		font-weight: 600;
+		line-height: 33px;
+		font-size: 1.1em;
+		word-spacing: 1px;
+		margin: 2.7em 0 0;
+		text-align: center;
+	}
+	
+	.aboutsection-lg {
+		display: none;
+	}
+
+}
+
+/*___________________________________________________________
+               MOBILE
+  __________________________________________________________*/
+
+@media screen and (max-width:899px) {
+
+	.aboutsection-lg .container {
+		margin: 1.5em 2em;
+	}
+
+	.aboutsection-lg .container .card .image {
+		width: 100%;
+		height: 40%;
+	}
+
+	.aboutsection-lg .container .card .image img {
+		position: relative;
+		width: 95%;
+		height: 95%;
+		-webkit-touch-callout: none;
+    	-webkit-user-select: none;
+    		-khtml-user-select: none;
+       			-moz-user-select: none;
+        			-ms-user-select: none;
+            			user-select: none;
+	}
+
+	.aboutsection-lg .container .card .info {
+		width: 100%;
+		height: auto;
+		padding: 1.9em;
+	}
+
+}
+
+@media screen and (max-width:600px) {
+
+	.aboutsection-lg .container {
+		margin: 1.5em 1em;
+	}
+
+	.aboutsection-lg .container .card .info {
+		padding: 1em;
+	}
+
+}
+
+/*___________________________________________________________
+               		ABOUT US FEATURES CARDS
+  __________________________________________________________*/
+
+.aboutcards {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.aboutcards .container {
+	margin: 1em 0;
+	width: 1000px;
+	padding: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+.aboutcards .container .wrapcard {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	flex: 1 2 auto;
+}
+
+.aboutcards .container .wrapcard .card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background: #E0E5EC;
+	margin: 2em 1.1em;
+	border-radius: 1.3em;
+	width: 270px;
+	height: 500px;
+	max-width: 100%;
+	box-shadow:  4px 4px 18px #c3c7cd, 
+				-4px -4px 18px #fdffff;
+	overflow: hidden;
+}
+
+.aboutcards .container .wrapcard .card .image {
+	background: linear-gradient(45deg,#FF748B,#FE7BB0);
+	width: 100%;
+	height: 40%;
+	border-radius: 1.3em;
+	padding: 0.6em;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 4px 4px 10px rgba(254,123,176,0.8),
+				-4px -4px 10px rgba(254,123,176,0.8);
+}
+
+.aboutcards .container .wrapcard .card .image .imagebox {
+	width: 100%;
+	height: 100%;
+	border-radius: 0.6em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #E0E5EC;
+}
+
+.aboutcards .container .wrapcard .card .image .imagebox img {
+	width: 90%;
+	height: 90%;
+	margin: 0 auto;
+	-webkit-touch-callout: none;
+    	-webkit-user-select: none;
+    		-khtml-user-select: none;
+       			-moz-user-select: none;
+        			-ms-user-select: none;
+            			user-select: none;
+}
+
+.aboutcards .container .wrapcard .card .info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 1.1em;
+	height: 60%;
+	overflow: hidden;
+}
+
+.aboutcards .container .wrapcard .card .info h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin: 0.22em 0.3em;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	color: #333;
+}
+
+.aboutcards .container .wrapcard .card .info p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	word-spacing: 1px;
+	text-align: center;
+	margin: 0.1em 0 0.22em;
+	color: #444;
+}
+
+@media screen and (max-width:325px) {
+	.aboutcards .container .wrapcard .card {
+		width: 250px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:305px) {
+	.aboutcards .container .wrapcard .card {
+		width: 230px;
+	}
+
+	.aboutcards .container .wrapcard .card .info h3 {
+		margin: 1.9em 0.3em 0.22em;
+	}
+}

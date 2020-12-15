@@ -1,0 +1,246 @@
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  /* width: 1000px; */
+  height: 100%;
+  width: 100%;
+  }
+
+.container {
+  background-image: url(obg3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2em 160px;
+}
+
+.hding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 200px 0 200px;
+}
+
+.hding h1 {
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: #000;
+  color: #FFF;
+  padding: 14px 36px;
+  border-radius: 32px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.box {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-container {
+  padding: 1em;
+  background: #FFF;
+  border-radius: 10px;
+}
+
+form {
+  padding: 5px 26px;
+  margin: 26px 0 6px 0;
+}
+
+.input-box {
+  padding: 12px;
+  position: relative;
+  margin: 12px;
+}
+
+span {
+  float: left;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px;
+  /* margin-top: -20px; */
+}
+
+input {
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #000;
+  border-radius: 2px;
+  padding: 14px;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  resize: none;
+}
+
+/*___________________________________________________________
+			Dialogue Box (MODAL)
+_____________________________________________________________*/
+
+.modal {
+  /* display: block; */
+  /* top: 0; */
+  /* z-index: 5; */
+  /* margin: 5px 10% 10% 10%; */
+  margin-top: 160px;
+  padding: 0;
+  /* box-shadow: 0.2px 0.2px 30px #000; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal .m-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: 380px;
+  /* max-width: 100%;
+  max-height: 100%; */
+  position: fixed;
+  border-radius: 24px;
+  background: #121212;
+  /* padding: 1.1em; */
+  padding: 0;
+  margin: 0;
+  z-index: 7;
+  box-shadow: 100px 100px 400px rgba(0, 0, 0, 0.5);
+}
+
+.modal .m-container .hding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* margin: -60px 0 0 0; */
+  width: 100%;
+  height: 5px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.modal .m-container .hding h2 {
+  background: #FFF;
+  width: 245px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 25px;
+  font-weight: 600;
+  margin: -80px 0 5px 0;
+}
+
+.modal .m-container .box {
+  /* margin: -5px 1em; */
+  margin: 2px 3px;
+  padding: 12px;
+}
+
+.modal .m-container .box img {
+  display: none;
+}
+
+.modal .m-container .box p {
+  color: #FFF;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 35px;
+  margin: 6px;
+  word-spacing: 2px;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  width: 100%;
+  height: 50px;
+  margin: 3px 0 -60px 0;
+  padding: 4px;
+}
+
+.btns .confirm-box {
+  margin: 10px 4px -10px 6px;
+}
+
+.btns .confirm-box a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: #00ff22;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 9px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btns .confirm-box a:hover {
+  background: #21cc18;
+  transition: 0.4s ease;
+}
+
+.btns .recheck-box {
+  margin: 10px 6px -10px 4px;
+}
+
+.btns .recheck-box a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: #ff0000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 9px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btns .recheck-box a:hover {
+  background: #d62b18;
+  transition: 0.4s ease;
+}
+
+
+
+/*___________________________________________________________
+			Mobile Screen styling configuration
+_____________________________________________________________*/
